@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form barang</title>
+</head>
+<body style="padding: 1rem">
+    <div style=" justify-content: center; display: flex; align-items: center; flex-direction: column;">
+        <h1 style="">form tambah stock barang</h1>
+        <form action="{{route('barang.store')}}" style="flex-direction: column; width: 50%; display: flex; gap: 1rem;" method="POST" enctype="multipart/form-data">
+        @csrf
+            <label for="nama_barang">Nama Barang:</label>
+                <input type="text" id="nama_barang" name="nama_barang" required> 
+                <label for="qty">Jumlah Barang:</label>
+                <input type="text" id="jumlah_barang" name="jumlah_barang" required> 
+                <label for="line_divisi">Line Divisi:</label>
+                <input type="text" id="line_divisi" name="line_divisi" required>
+                <label for="production_date">Production Date:</label>
+                <input type="date" id="production_date" name="production_date" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
