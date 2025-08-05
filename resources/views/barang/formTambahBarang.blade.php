@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>form barang</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body style="padding: 1rem">
-    <div class="flex justify-center items-center">
+<body class="p-4">
+    <div class="flex flex-col justify-center items-center border-1 border-gray-300 rounded-lg p-4" >
         <h1 style="">form tambah stock barang</h1>
         <form action="{{route('barang.store')}}" style="flex-direction: column; width: 50%; display: flex; gap: 1rem;" method="POST" enctype="multipart/form-data">
         @csrf
