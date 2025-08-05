@@ -7,7 +7,7 @@
     <title>form barang</title>
 </head>
 <body style="padding: 1rem">
-    <div style=" justify-content: center; display: flex; align-items: center; flex-direction: column;">
+    <div class="flex justify-center items-center">
         <h1 style="">form tambah stock barang</h1>
         <form action="{{route('barang.store')}}" style="flex-direction: column; width: 50%; display: flex; gap: 1rem;" method="POST" enctype="multipart/form-data">
         @csrf
