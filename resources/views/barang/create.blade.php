@@ -9,7 +9,7 @@
 </head>
 <body class="p-4">
     <div class="flex flex-col justify-center items-center border-1 border-gray-300 rounded-lg p-4" >
-        <h1 style="">form tambah stock barang</h1>
+        <h1 >form tambah stock barang</h1>
         <form action="{{route('barang.store')}}" style="flex-direction: column; width: 50%; display: flex; gap: 1rem;" method="POST" enctype="multipart/form-data">
         @csrf
             <label for="nama_barang">Nama Barang:</label>

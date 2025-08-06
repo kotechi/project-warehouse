@@ -12,12 +12,12 @@ use Carbon\Carbon;
 class barangController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource.\
      */
     public function index()
     {
         $barang = Barang::all();
-        return view('barang/formTambahBarang', compact('barang'));
+        return view('barang/index', compact('barang'));
     }
 
     /**
@@ -25,8 +25,7 @@ class barangController extends Controller
      */
     public function create()
     {
-
-        
+        return view('barang/create');        
     }
 
     /**
